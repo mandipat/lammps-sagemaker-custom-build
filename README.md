@@ -2,8 +2,7 @@
 
 This project contains several components for building, running, and automating LAMMPS simulations with AWS SageMaker. Below is an overview of the folder structure and their purposes:
 
-- **Lammps_bundle_cpu/**: Contains the CPU bundle of LAMMPS.
-- **Lammps_bundle_gpu/**: Contains the GPU bundle of LAMMPS.
+
 - **Sagemaker_dockerfile/**: Main Dockerfiles for SageMaker.  
   - To build the main Docker image, run from the root folder:  
     `docker build --platform linux/amd64 -t sm-build -f Sagemaker_dockerfile/GPU/Dockerfile .`  
@@ -13,8 +12,10 @@ This project contains several components for building, running, and automating L
 - **LCC-auto-stop-idle/**: Contains scripts for SageMaker lifecycle configuration to auto-stop idle instances.  
   - For usage and setup, refer to:  
     https://github.com/aws-samples/sagemaker-studio-apps-lifecycle-config-examples/tree/main/jupyterlab/auto-stop-idle
+- **Lammps_bundle_cpu/** and **Lammps_bundle_gpu/**:  
+  *These folders are not included in this repository.*  
+  You can download pre-built LAMMPS binaries for CPU and GPU from the [official LAMMPS website](https://lammps.org/download.html) or build them yourself. Place the downloaded or built binaries in these folders if needed for your workflow.
 
----
 
 # Building and Deploying the LAMMPS SageMaker Custom Image
 

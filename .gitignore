@@ -1,8 +1,4 @@
 lammps_bundle_cpu/share/*
-lammps_bundle_cpu/etc/*
-lammps_bundle_cpu/bin/binary2txt
-lammps_bundle_cpu/bin/chain.x
-lammps_bundle_cpu/bin/micelle2d.x
-lammps_bundle_cpu/bin/msi2lmp
-lammps_bundle_cpu/bin/phana
-lammps_bundle_cpu/bin/stl_bin2txt
+lammps_bundle_cpu/*
+lammps_bundle_gpu/*
+
